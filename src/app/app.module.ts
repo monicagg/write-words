@@ -5,11 +5,13 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
 
 import { AppComponent } from './app.component';
 import { WordspellingComponent } from './wordspelling/wordspelling.component';
+import { FillinggapsComponent } from './fillinggaps/fillinggaps.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    WordspellingComponent
+    WordspellingComponent,
+    FillinggapsComponent
   ],
   imports: [
     BrowserModule,

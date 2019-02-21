@@ -1,6 +1,6 @@
 <div cdkDropListGroup class="example-container">
 	<div cdkDropList [cdkDropListData]="wordLetters" cdkDropListOrientation="horizontal" class="example-list" (cdkDropListDropped)="drop($event)">
-	  <h5>What word can be spelled with the letters below? Drag the letters here in the correct order.</h5>
+	  <p>What word(s) can be spelled with the letters below? Drag the letters here.</p>
 	  <div class="example-box" *ngFor="let wordLetter of wordLetters" cdkDrag>{{wordLetter}}</div>
 	</div>
 	<div cdkDropList [cdkDropListData]="letters" cdkDropListOrientation="horizontal" class="example-list" (cdkDropListDropped)="drop($event)">

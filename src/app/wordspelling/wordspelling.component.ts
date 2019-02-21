@@ -10,6 +10,7 @@ export class WordspellingComponent implements OnInit {
   wordLetters = [];
   letters = ['b', 'r', 'o', 'd', 'r', 'e'];
   message = "";
+  words = ['bored', 'border'];
   
   constructor() { }
 
@@ -25,7 +26,7 @@ export class WordspellingComponent implements OnInit {
 	                      event.previousIndex,
 	                      event.currentIndex);
 	}
-	if (this.wordLetters.join('')==="border") {
+	if (this.words.indexOf(this.wordLetters.join(''))>-1) {
 		this.message = "Well done!";
 	} else {
 		this.message = "";

@@ -1,0 +1,10 @@
+<div cdkDropListGroup class="example-container">
+  <div cdkDropList [cdkDropListData]="gaps" cdkDropListOrientation="horizontal" class="example-list" (cdkDropListDropped)="drop($event)">
+    <p>Fill in the gaps</p>
+    <div cdkDrag>{{textWithGaps}}</div>
+  </div>
+  <div cdkDropList [cdkDropListData]="shuffledWords" cdkDropListOrientation="horizontal" class="example-list" (cdkDropListDropped)="drop($event)">
+    <div class="example-box" *ngFor="let item of shuffledWords" cdkDrag>{{item}}</div>
+  </div> 
+</div>
+<div>{{message}}</div>
